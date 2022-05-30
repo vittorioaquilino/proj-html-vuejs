@@ -1,0 +1,151 @@
+<template>
+  <section class="popular-courses">
+      <div class="container">
+          <h4 class="mb-3">Popular Development Courses</h4>
+          <div class="courses-card">
+              <ul class="d-flex">
+                  <li
+                  v-for="(element, index) in card"
+                  :key="index"
+                  >
+                    <img :src="require(`../assets/images/${element.img}`)" alt="">
+                    <div class="description">
+                        <p class="card-title">{{ element.title }}</p>
+                        <p class="card-text">{{ element.text }}</p>
+                    </div>
+                    <div class="price">
+                        <div class="price-vote">
+                            <img class="star" src="../assets/images/starfull.svg" alt="">
+                        </div>
+                        <div class="price-number">
+                            <p class="old">{{ element.oldprice }}</p>
+                            <p>{{ element.newprice }}</p>
+                        </div>
+                    </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </section>
+</template>
+
+<script>
+export default {
+    name: "AppPopularCourses",
+    data() {
+        return {
+            card: [
+                {
+                    img:"895786_7b4b_2-272x161.jpg",
+                    title: "Development>",
+                    text: "lorem",
+                    vote: 9,
+                    oldprice: "$199.99",
+                    newprice: "$100",
+                },
+                {
+                    img: "246154_d8b0_3-272x161.jpg",
+                    title: "Development>",
+                    text: "lorem",
+                    vote: 9.5,
+                    oldprice: "$129.99",
+                    newprice: "$65",
+                },
+                {
+                    img: "752950_b773-272x161.jpg",
+                    title: "Development>",
+                    text: "lorem",
+                    vote: 9,
+                    oldprice: "$99.99",
+                    newprice: "$50",
+                },
+                {
+                    img: "1253188_58f7_2-272x161.jpg",
+                    title: "Development>",
+                    text: "lorem",
+                    vote: 9,
+                    oldprice: "$199.99",
+                    newprice: "$100",
+                }, 
+                {
+                    img: "919872_ed54_6-272x161.jpg",
+                    title: "Development>",
+                    text: "lorem",
+                    vote: 9,
+                    oldprice: "$99.99",
+                    newprice: "$50",
+                },
+                {
+                    img: "951684_9c1a_2-272x161.jpg",
+                    title: "Development>",
+                    text: "lorem",
+                    vote: 9,
+                    oldprice: "$189.99",
+                    newprice: "$95",
+                },
+            ],
+        }
+    },
+    methods: {
+        convertVote(vote) {
+            const convertedVote = vote / 2;
+            const roundedVote = Math.ceil(convertedVote);
+            return roundedVote;
+        },
+    }
+}
+</script>
+
+<style lang="scss" scoped>
+.popular-courses {
+    margin-top: 4rem;
+
+    .courses-card li {
+        width: calc(100% / 6 - 10px);
+        border: 1px solid lightgray;
+        margin: 5px;
+
+        img {
+            width: 200px;
+            margin-bottom: .5rem;
+        }
+
+        .description {
+            padding: .7rem;
+
+            .card-title {
+            font-size: .8rem;
+            color: lightgray;
+            }
+
+        .card-text {
+            font-size: .8rem;
+            padding-bottom: .5rem;
+            border-bottom: 1px solid lightgray;
+            }
+        }
+
+        .price {
+            padding: .7rem;
+            display: flex;
+            justify-content: space-between;
+            
+            .star {
+                width: 15px;
+            }
+
+            .price-number {
+                font-size: .8rem;
+
+                .old {
+                    text-decoration: line-through;
+                    color: lightgray;
+                    margin: 0;
+                }
+            }
+        }
+        
+    }
+}
+
+</style>
