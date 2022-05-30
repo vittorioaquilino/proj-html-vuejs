@@ -4,16 +4,21 @@
       <AppPreBanner />
       <!-- /pre banner -->
 
+      <!-- banner -->
+      <AppBanner />
+      <!-- /banner -->
     </section>
 </template>
 
 <script>
 import AppPreBanner from "./AppPreBanner.vue";
+import AppBanner from "./AppBanner.vue";
 
 export default {
     name: "AppMain",
     components: {
         AppPreBanner,
+        AppBanner,
     }
 }
 </script>
