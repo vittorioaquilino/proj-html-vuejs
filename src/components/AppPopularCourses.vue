@@ -124,7 +124,7 @@ export default {
 .popular-courses {
     padding-top: 5rem;
     padding-bottom: 3rem;
-    background-color: #f0f4f9;
+    background-color: $brand-background-color;
 
     h1 {
         font-size: 3rem;

@@ -1,12 +1,19 @@
 <template>
-  <section></section>
+  <section>
+    <!-- pre footer -->
+    <AppPreFooter />
+    <!-- /pre footer -->
+
+  </section>
 </template>
 
 <script>
+import AppPreFooter from "./AppPreFooter.vue";
+
 export default {
     name: "AppFooter",
     components: {
-
+      AppPreFooter,
     }
 }
 </script>
