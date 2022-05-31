@@ -19,6 +19,10 @@
         <!-- recent courses -->
         <AppRecentCourses :recentCoursesMenu="linksCourses"/>
         <!-- /recent courses -->
+
+        <!-- newsletter -->
+        <AppNewsLetter />
+        <!-- /newsletter -->
     </section>
 </template>
 
@@ -28,6 +32,7 @@ import AppFirstBanner from "./AppFirstBanner.vue";
 import AppPopularDevCourses from "./AppPopularDevCourses.vue";
 import AppSecondBanner from "./AppSecondBanner.vue";
 import AppRecentCourses from "./AppRecentCourses.vue";
+import AppNewsLetter from "./AppNewsLetter.vue";
 
 export default {
     name: "AppMain",
@@ -37,6 +42,7 @@ export default {
         AppPopularDevCourses,
         AppSecondBanner,
         AppRecentCourses,
+        AppNewsLetter,
     },
     data() {
         return {
