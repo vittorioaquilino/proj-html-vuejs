@@ -30,7 +30,18 @@
                     <!-- price -->
                     <div class="price">
                         <div class="price-vote">
-                            <img class="star" src="../assets/images/starfull.svg" alt="">
+                           <span
+                            v-for="( index) in convertVote(element.vote)"
+                            :key="index"
+                            class="star">
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            <span
+                            v-for="( index) in 5 - convertVote(element.vote)"
+                            :key="index + 10"
+                            class="star">
+                                <i class="fa-regular fa-star"></i>
+                            </span>
                         </div>
                         <div class="price-number">
                             <p class="old">{{ element.oldprice }}</p>
@@ -60,7 +71,7 @@ export default {
                     img:"895786_7b4b_2-544x322.jpg",
                     title: "Development>",
                     text: "The Complete iOS 10 & Swift 3 Developer Course",
-                    vote: 9,
+                    vote: 8,
                     oldprice: "$199.99",
                     newprice: "$100",
                 },
@@ -99,7 +110,7 @@ export default {
                     img: "1776542_30b1-272x161.jpg",
                     title: "Development>",
                     text: "Google Searching Ninja!",
-                    vote: 9.5,
+                    vote: 8,
                     oldprice: "$89.99",
                     newprice: "$45",
                 },
@@ -115,7 +126,7 @@ export default {
                     img: "366802_6fcc-272x161.jpg",
                     title: "Development>",
                     text: "Get Wine-Smart",
-                    vote: 9.5,
+                    vote: 8,
                     oldprice: "$49.99",
                     newprice: "$25",
                 },
@@ -123,7 +134,7 @@ export default {
                     img: "381588_2e6d_4-272x161.jpg",
                     title: "Development>",
                     text: "The Colored Pencil Drawing Course",
-                    vote: 9.5,
+                    vote: 8,
                     oldprice: "$34.99",
                     newprice: "$18",
                 },
@@ -131,7 +142,7 @@ export default {
                     img: "838056_611a_3-272x161.jpg",
                     title: "Development>",
                     text: "Paint Realistic Wtercolor and Botanicals - STUDIO BASICS",
-                    vote: 9.5,
+                    vote: 8,
                     oldprice: "$69.99",
                     newprice: "$35",
                 },
@@ -152,6 +163,13 @@ export default {
                     newprice: "$35",
                 }
             ],
+        }
+    },
+    methods: {
+        convertVote(vote) {
+            const convertedVote = vote / 2;
+            const roundedVote = Math.ceil(convertedVote);
+            return roundedVote;
         }
     }
 }
@@ -226,6 +244,11 @@ export default {
                     margin: 0;
                 }
             }
+      }
+
+      .price-vote i {
+          font-size: .8rem;
+          color: $brand-star-color;
       }
         
 }

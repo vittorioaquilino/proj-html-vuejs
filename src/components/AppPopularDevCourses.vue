@@ -20,7 +20,18 @@
                     <!-- price -->
                     <div class="price">
                         <div class="price-vote">
-                            <img class="star" src="../assets/images/starfull.svg" alt="">
+                            <span
+                            v-for="( index) in convertVote(element.vote)"
+                            :key="index"
+                            class="star">
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            <span
+                            v-for="( index) in 5 - convertVote(element.vote)"
+                            :key="index + 10"
+                            class="star">
+                                <i class="fa-regular fa-star"></i>
+                            </span>
                         </div>
                         <div class="price-number">
                             <p class="old">{{ element.oldprice }}</p>
@@ -44,7 +55,7 @@ export default {
                     img:"895786_7b4b_2-272x161.jpg",
                     title: "Development>",
                     text: "The Complete iOS 10 & Swift 3 Developer Course",
-                    vote: 9,
+                    vote: 8,
                     oldprice: "$199.99",
                     newprice: "$100",
                 },
@@ -52,7 +63,7 @@ export default {
                     img: "246154_d8b0_3-272x161.jpg",
                     title: "Development>",
                     text: "Web Design for Beginners: Real World Codin in HTML & CSS",
-                    vote: 9.5,
+                    vote: 8,
                     oldprice: "$129.99",
                     newprice: "$65",
                 },
@@ -60,7 +71,7 @@ export default {
                     img: "752950_b773-272x161.jpg",
                     title: "Development>",
                     text: "GitHub Ultimate: Master Git and GitHub - Beginner to Expert",
-                    vote: 9,
+                    vote: 8,
                     oldprice: "$99.99",
                     newprice: "$50",
                 },
@@ -68,7 +79,7 @@ export default {
                     img: "1253188_58f7_2-272x161.jpg",
                     title: "Development>",
                     text: "The Complete iOS 11 & Swift Developer Course - Build 20 Apps",
-                    vote: 9,
+                    vote: 8,
                     oldprice: "$199.99",
                     newprice: "$100",
                 }, 
@@ -76,7 +87,7 @@ export default {
                     img: "919872_ed54_6-272x161.jpg",
                     title: "Development>",
                     text: "Android Java Masterclass - Became an App Developer",
-                    vote: 9,
+                    vote: 8,
                     oldprice: "$99.99",
                     newprice: "$50",
                 },
@@ -84,7 +95,7 @@ export default {
                     img: "951684_9c1a_2-272x161.jpg",
                     title: "Development>",
                     text: "Xamarin Forms: Build Native Cross-platform Apps with C#",
-                    vote: 9,
+                    vote: 8,
                     oldprice: "$189.99",
                     newprice: "$95",
                 },
@@ -102,6 +113,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../style/variables.scss";
+
 .popular-courses {
     margin-top: 4rem;
 
@@ -150,6 +163,11 @@ export default {
             }
         }
         
+    }
+    
+    .price-vote i {
+        font-size: .8rem;
+        color: $brand-star-color;
     }
 }
 
