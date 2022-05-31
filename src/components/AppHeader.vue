@@ -12,7 +12,7 @@
               <div class="ms_header-menu">
                   <ul class="menu-list d-flex mt-2">
                       <li
-                      v-for="(element, index) in links"
+                      v-for="(element, index) in headerMenu"
                       :key="index"
                       >
                         <a href="">{{ element.text }}</a>
@@ -57,7 +57,7 @@
                       <div class="user-login">
                           <i class="fas fa-user"></i>
                           <span>Login</span>
-                          <button>sign up</button>
+                          <button class="text-uppercase fw-bold first-button">sign up</button>
                           <i class="far fa-bookmark"></i>
                       </div>
                   </div>
@@ -71,35 +71,9 @@
 <script>
 export default {
     name: "AppHeader",
-    data() {
-        return {
-            links: [
-                {
-                    url: "#",
-                    text: "Home"
-                },
-                {
-                    url: "#",
-                    text: "Pages"
-                },
-                {
-                    url: "#",
-                    text: "Course Formats"
-                },
-                {
-                    url: "#",
-                    text: "Courses"
-                },
-                {
-                    url: "#",
-                    text: "Demos"
-                },
-            ],
-        }
+    props: {
+        headerMenu: Array,
     },
-    components: {
-
-    }
 }
 </script>
 
@@ -186,8 +160,8 @@ export default {
             .user-login {
                 margin-left: 2rem;
 
-                button {
-                    padding: 1rem;
+                .first-button {
+                    padding: .7rem;
                     border-radius: 30px;
                     color: white;
                     background-color: $brand-primary-color;

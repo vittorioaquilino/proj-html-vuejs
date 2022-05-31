@@ -19,7 +19,7 @@
                         </div>
                         <div class="price-number">
                             <p class="old">{{ element.oldprice }}</p>
-                            <p>{{ element.newprice }}</p>
+                            <p class="text-end">{{ element.newprice }}</p>
                         </div>
                     </div>
                   </li>
@@ -38,7 +38,7 @@ export default {
                 {
                     img:"895786_7b4b_2-272x161.jpg",
                     title: "Development>",
-                    text: "lorem",
+                    text: "The Complete iOS 10 & Swift 3 Developer Course",
                     vote: 9,
                     oldprice: "$199.99",
                     newprice: "$100",
@@ -46,7 +46,7 @@ export default {
                 {
                     img: "246154_d8b0_3-272x161.jpg",
                     title: "Development>",
-                    text: "lorem",
+                    text: "Web Design for Beginners: Real World Codin in HTML & CSS",
                     vote: 9.5,
                     oldprice: "$129.99",
                     newprice: "$65",
@@ -54,7 +54,7 @@ export default {
                 {
                     img: "752950_b773-272x161.jpg",
                     title: "Development>",
-                    text: "lorem",
+                    text: "GitHub Ultimate: Master Git and GitHub - Beginner to Expert",
                     vote: 9,
                     oldprice: "$99.99",
                     newprice: "$50",
@@ -62,7 +62,7 @@ export default {
                 {
                     img: "1253188_58f7_2-272x161.jpg",
                     title: "Development>",
-                    text: "lorem",
+                    text: "The Complete iOS 11 & Swift Developer Course - Build 20 Apps",
                     vote: 9,
                     oldprice: "$199.99",
                     newprice: "$100",
@@ -70,7 +70,7 @@ export default {
                 {
                     img: "919872_ed54_6-272x161.jpg",
                     title: "Development>",
-                    text: "lorem",
+                    text: "Android Java Masterclass - Became an App Developer",
                     vote: 9,
                     oldprice: "$99.99",
                     newprice: "$50",
@@ -78,7 +78,7 @@ export default {
                 {
                     img: "951684_9c1a_2-272x161.jpg",
                     title: "Development>",
-                    text: "lorem",
+                    text: "Xamarin Forms: Build Native Cross-platform Apps with C#",
                     vote: 9,
                     oldprice: "$189.99",
                     newprice: "$95",

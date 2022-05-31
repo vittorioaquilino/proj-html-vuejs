@@ -1,7 +1,7 @@
 <template>
     <div id="app">
       <!-- header -->
-      <AppHeader />
+      <AppHeader :headerMenu="linksHeader"/>
       <!-- /header -->
 
       <!-- main -->
@@ -25,7 +25,33 @@ export default {
     AppHeader,
     AppMain,
     AppFooter,
-  }
+  },
+  data() {
+        return {
+            linksHeader: [
+                {
+                    url: "#",
+                    text: "Home"
+                },
+                {
+                    url: "#",
+                    text: "Pages"
+                },
+                {
+                    url: "#",
+                    text: "Course Formats"
+                },
+                {
+                    url: "#",
+                    text: "Courses"
+                },
+                {
+                    url: "#",
+                    text: "Demos"
+                },
+            ],
+        }
+    },
 }
 </script>
 

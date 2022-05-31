@@ -14,7 +14,7 @@
 
 <script>
 export default {
-    name: "AppBanner",
+    name: "AppFirstBanner",
 }
 </script>
 

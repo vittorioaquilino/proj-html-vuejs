@@ -5,26 +5,33 @@
       <!-- /pre banner -->
 
       <!-- banner -->
-      <AppBanner />
+      <AppFirstBanner />
       <!-- /banner -->
 
       <!-- popular courses -->
       <AppPopularCourses />
       <!-- /popular courses -->
+
+      <!-- second banner -->
+      <AppSecondBanner />
+      <!-- /second banner -->
+
     </section>
 </template>
 
 <script>
 import AppPreBanner from "./AppPreBanner.vue";
-import AppBanner from "./AppBanner.vue";
+import AppFirstBanner from "./AppFirstBanner.vue";
 import AppPopularCourses from "./AppPopularCourses.vue";
+import AppSecondBanner from "./AppSecondBanner.vue";
 
 export default {
     name: "AppMain",
     components: {
         AppPreBanner,
-        AppBanner,
+        AppFirstBanner,
         AppPopularCourses,
+        AppSecondBanner,
     }
 }
 </script>
