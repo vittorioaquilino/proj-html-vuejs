@@ -27,6 +27,10 @@
         <!-- popular courses -->
         <AppPopularCourses />
         <!-- /popular courses -->
+
+        <!-- start plan -->
+        <AppStartPlan />
+        <!-- /start plan -->
     </section>
 </template>
 
@@ -38,6 +42,7 @@ import AppSecondBanner from "./AppSecondBanner.vue";
 import AppRecentCourses from "./AppRecentCourses.vue";
 import AppNewsLetter from "./AppNewsLetter.vue";
 import AppPopularCourses from "./AppPopularCourses.vue";
+import AppStartPlan from "./AppStartPlan.vue";
 
 export default {
     name: "AppMain",
@@ -49,6 +54,7 @@ export default {
         AppRecentCourses,
         AppNewsLetter,
         AppPopularCourses,
+        AppStartPlan,
     },
     data() {
         return {
