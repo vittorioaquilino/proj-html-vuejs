@@ -137,7 +137,7 @@ export default {
             .ms_input i {
                 width: 60px;
                 height: 48px;
-                background-color: #447991;
+                background-color: $brand-secondary-color;
                 line-height: 50px;
                 text-align: center;
                 color: lightgray;

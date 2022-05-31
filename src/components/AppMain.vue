@@ -8,9 +8,9 @@
         <AppFirstBanner />
         <!-- /banner -->
 
-        <!-- popular courses -->
+        <!-- popular dev courses -->
         <AppPopularDevCourses />
-        <!-- /popular courses -->
+        <!-- /popular dev courses -->
 
         <!-- second banner -->
         <AppSecondBanner />
@@ -23,6 +23,10 @@
         <!-- newsletter -->
         <AppNewsLetter />
         <!-- /newsletter -->
+
+        <!-- popular courses -->
+        <AppPopularCourses />
+        <!-- /popular courses -->
     </section>
 </template>
 
@@ -33,6 +37,7 @@ import AppPopularDevCourses from "./AppPopularDevCourses.vue";
 import AppSecondBanner from "./AppSecondBanner.vue";
 import AppRecentCourses from "./AppRecentCourses.vue";
 import AppNewsLetter from "./AppNewsLetter.vue";
+import AppPopularCourses from "./AppPopularCourses.vue";
 
 export default {
     name: "AppMain",
@@ -43,6 +48,7 @@ export default {
         AppSecondBanner,
         AppRecentCourses,
         AppNewsLetter,
+        AppPopularCourses,
     },
     data() {
         return {

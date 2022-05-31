@@ -42,7 +42,7 @@ export default {
 
     span {
        padding: .9rem;
-        background-color: #447991;
+        background-color: $brand-secondary-color;
         line-height: 50px;
         text-align: center;
         color: lightgray;
