@@ -1,18 +1,23 @@
 <template>
   <section class="popular-courses">
       <div class="container">
+          <!-- title -->
           <h4 class="mb-3">Popular Development Courses</h4>
+          <!-- courses card -->
           <div class="courses-card">
               <ul class="d-flex">
                   <li
                   v-for="(element, index) in card"
                   :key="index"
                   >
+                  <!-- images -->
                     <img :src="require(`../assets/images/${element.img}`)" alt="">
+                    <!-- description -->
                     <div class="description">
                         <p class="card-title">{{ element.title }}</p>
                         <p class="card-text">{{ element.text }}</p>
                     </div>
+                    <!-- price -->
                     <div class="price">
                         <div class="price-vote">
                             <img class="star" src="../assets/images/starfull.svg" alt="">
@@ -31,7 +36,7 @@
 
 <script>
 export default {
-    name: "AppPopularCourses",
+    name: "AppPopularDevCourses",
     data() {
         return {
             card: [

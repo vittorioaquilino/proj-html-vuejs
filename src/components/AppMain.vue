@@ -1,37 +1,81 @@
 <template>
     <section class="ms_main">
-      <!-- pre banner -->
-      <AppPreBanner />
-      <!-- /pre banner -->
+        <!-- pre banner -->
+        <AppPreBanner />
+        <!-- /pre banner -->
 
-      <!-- banner -->
-      <AppFirstBanner />
-      <!-- /banner -->
+        <!-- banner -->
+        <AppFirstBanner />
+        <!-- /banner -->
 
-      <!-- popular courses -->
-      <AppPopularCourses />
-      <!-- /popular courses -->
+        <!-- popular courses -->
+        <AppPopularDevCourses />
+        <!-- /popular courses -->
 
-      <!-- second banner -->
-      <AppSecondBanner />
-      <!-- /second banner -->
+        <!-- second banner -->
+        <AppSecondBanner />
+        <!-- /second banner -->
 
+        <!-- recent courses -->
+        <AppRecentCourses :recentCoursesMenu="linksCourses"/>
+        <!-- /recent courses -->
     </section>
 </template>
 
 <script>
 import AppPreBanner from "./AppPreBanner.vue";
 import AppFirstBanner from "./AppFirstBanner.vue";
-import AppPopularCourses from "./AppPopularCourses.vue";
+import AppPopularDevCourses from "./AppPopularDevCourses.vue";
 import AppSecondBanner from "./AppSecondBanner.vue";
+import AppRecentCourses from "./AppRecentCourses.vue";
 
 export default {
     name: "AppMain",
     components: {
         AppPreBanner,
         AppFirstBanner,
-        AppPopularCourses,
+        AppPopularDevCourses,
         AppSecondBanner,
+        AppRecentCourses,
+    },
+    data() {
+        return {
+            linksCourses: [
+                {
+                    url: "#",
+                    text: "All Categories",
+                    active: true,
+                },
+                {
+                    url: "#",
+                    text: "Business"
+                },
+                {
+                    url: "#",
+                    text: "Design"
+                },
+                {
+                    url: "#",
+                    text: "Development"
+                },
+                {
+                    url: "#",
+                    text: "IT & Software"
+                },
+                {
+                    url: "#",
+                    text: "Lifestyle"
+                },
+                {
+                    url: "#",
+                    text: "Marketing"
+                },
+                {
+                    url: "#",
+                    text: "Office Productivity"
+                },
+            ],
+        }
     }
 }
 </script>
