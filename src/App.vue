@@ -9,7 +9,7 @@
       <!-- /main -->
 
       <!-- footer -->
-      <AppFooter />
+      <AppFooter :footerMenu="linksFooter"/>
       <!-- /footer -->
     </div>
 </template>
@@ -48,6 +48,29 @@ export default {
                 {
                     url: "#",
                     text: "Demos"
+                },
+            ],
+            linksFooter: [
+                {
+                    url: "#",
+                    title: "about",
+                    description: [
+                        {
+                            text: "Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consecteur vel, rutrum eu ipsum. Mauris accumsan eros eget libero posuere vulputate."
+                        },
+                    ]
+                },
+                {
+                    url: "#",
+                    title: "contact",
+                    description: [
+                        {
+                            text: "USA, California 20, First Avenue, California",
+                            number: "Tel.:+1 212 458 300 32 Fax.:+1 212 375 24 14",
+                            email: "info@masterstudy.com"
+
+                        },
+                    ],
                 },
             ],
         }
