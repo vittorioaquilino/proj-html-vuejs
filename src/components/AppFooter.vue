@@ -21,14 +21,14 @@
               </div>
               <div class="col-3">
                 <h4>{{footerMenu.social.title }}</h4>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-pinterest"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fas fa-basketball-ball"></i>
-                <i class="fab fa-google-plus"></i>
-                <i class="fab fa-skype"></i>
+                <i class="fab fa-facebook icon1"></i>
+                <i class="fab fa-instagram icon2"></i>
+                <i class="fab fa-linkedin icon3"></i>
+                <i class="fab fa-pinterest icon4"></i>
+                <i class="fab fa-twitter icon5"></i>
+                <i class="fas fa-basketball-ball icon6"></i>
+                <i class="fab fa-google-plus icon7"></i>
+                <i class="fab fa-skype icon8"></i>
               </div>
               <div class="col-3">
                 <img src="../assets/images/Top-udemy-courses-90-percent-off.jpg" alt="">
@@ -80,9 +80,13 @@ img {
 }
 
 i {
-  width: 70px;
+  width: 50px;
   margin-bottom: 2rem;
+  margin-right: 1rem;
   font-size: 1.5rem;
+  border-radius: 30px;
+  padding: .7rem;
+  text-align: center;
 }
 
 .mail {
@@ -93,6 +97,37 @@ p {
   font-size: .8rem;
 }
 
+.icon1 {
+  background-color: #3c5998;
+}
+
+.icon2 {
+  background-color: #c22aa3;
+}
+
+.icon3 {
+  background-color: #0177b5;
+}
+
+.icon4 {
+  background-color: #bd091c;
+}
+
+.icon5 {
+  background-color: #1da1f1;
+}
+
+.icon6 {
+  background-color: #e94c89;
+}
+
+.icon7 {
+  background-color: #da4437;
+}
+
+.icon8 {
+  background-color: #01aef0;
+}
 .footer-bottom {
   height: 50px;
   align-items: center;
