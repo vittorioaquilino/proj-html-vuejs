@@ -50,29 +50,33 @@ export default {
                     text: "Demos"
                 },
             ],
-            linksFooter: [
-                {
-                    url: "#",
+            linksFooter: {
+                about: {
                     title: "about",
-                    description: [
-                        {
-                            text: "Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consecteur vel, rutrum eu ipsum. Mauris accumsan eros eget libero posuere vulputate."
-                        },
-                    ]
+                    text: "Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consecteur vel, rutrum eu ipsum. Mauris accumsan eros eget libero pousere vulputate."
                 },
-                {
-                    url: "#",
+                contact: {
                     title: "contact",
-                    description: [
-                        {
-                            text: "USA, California 20, First Avenue, California",
-                            number: "Tel.:+1 212 458 300 32 Fax.:+1 212 375 24 14",
-                            email: "info@masterstudy.com"
-
-                        },
-                    ],
+                    address: "USA, California 20, First Avenue, California",
+                    number: "Tel.: +1 212 458 300 32",
+                    fax: "Fax.: +1 212 375 24 14",
+                    mail: "info@masterstudy.com"
                 },
-            ],
+                social: {
+                    title: "social network",
+                    // icon: [
+                    //     "fab fa-facebook",
+                    //     "fab fa-instagram",
+                    //     "fab fa-linkedin",
+                    //     "fab fa-pinterest",
+                    //     "fab fa-twitter",
+                    //     "fas fa-basketball-ball",
+                    //     "fab fa-google-plus",
+                    //     "fab fa-skype",
+                    // ]
+                }
+            }
+                
         }
     },
 }
